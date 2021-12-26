@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-image: url("bg-intro-mobile.png");
+  background-position: center;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  max-width: 650px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header,
+.subHeading {
+  text-align: center;
+}
+
+.header {
+  margin-top: 10%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.subHeading {
+  margin-top: 5%;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.trial {
+  margin-top: 8%;
+  font-size: 0.7rem;
+  text-align: center;
+  color: white;
+  background-color: #5e54a4;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.4rem rgb(0, 0, 0, 0.2);
+}
+
+form {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 7%;
+  text-align: center;
+  width: 100%;
+  height: 22rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem rgb(0, 0, 0, 0.2);
+}
+
+input {
+  width: 80%;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0, 0.2);
+  padding-left: 15px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input[type="submit"] {
+  width: 84%;
+  margin-bottom: 0.5rem;
+  background-color: #38cc8b;
+  color: white;
+  border-color: white;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+}
+
+.smallPrint {
+  font-size: 0.5rem;
+  margin-top: 5%;
+}
+
+.agreement {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.conditions {
+  color: hsl(0, 100%, 74%);
+}
+
+#errorFN,
+#errorLN,
+#errorEmail,
+#errorPassword {
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.5rem;
+}
+
+/* media queries */
+body {
+  background-image: url("bg-intro-desktop.png");
+  background-position: center;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .left {
+    width: 50%;
+    float: left;
+  }
+
+  .header,
+  .subHeading {
+    text-align: left;
+    padding-right: 10px;
+  }
+
+  .header {
+    margin-top: 30vh;
+    font-size: 2.2rem;
+  }
+
+  .subHeading {
+    margin-top: 5%;
+    font-size: 0.7rem;
+  }
+
+  .right {
+    width: 50%;
+    float: right;
+  }
+
+  .trial {
+    margin-top: 18.5vh;
+    margin-left: 10px;
+  }
+
+  form {
+    margin-left: 5px;
+  }
+}
